@@ -1,0 +1,272 @@
+/* =========================================
+   RESET & BASE
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #6c63ff 0%, #4834d4 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4834d4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   CONTAINER GERAL (login / cadastro)
+========================================= */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.box h1 {
+    color: #2d2d2d;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   FORMULÁRIOS
+========================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #d8d8e0;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f7f7fb;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+    background: #ffffff;
+}
+
+/* Grupo de radio buttons (Sexo) */
+form > label {
+    margin-bottom: 8px;
+}
+
+input[type="radio"] {
+    accent-color: #6c63ff;
+    margin-right: 6px;
+}
+
+form label[for^="masculino"],
+form label[for^="feminino"] {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    color: #555;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    background: linear-gradient(135deg, #6c63ff 0%, #4834d4 100%);
+    color: #fff;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(72, 52, 212, 0.35);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   MENSAGENS DE ERRO / FEEDBACK
+========================================= */
+.mensagem {
+    margin-top: 15px;
+}
+
+.mensagem p {
+    background: #ffe3e3;
+    color: #c0392b;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* =========================================
+   LINK "Registre-se aqui" / "Adicionar Usuário"
+========================================= */
+.box p {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========================================
+   PORTAL (página com tabela de usuários)
+========================================= */
+.portal-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 950px;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portal-container h1 {
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.portal-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.portal-actions a {
+    background: #6c63ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.portal-actions a:hover {
+    background: #4834d4;
+    text-decoration: none;
+}
+
+.portal-actions a[href="logout.php"] {
+    background: #e74c3c;
+}
+
+.portal-actions a[href="logout.php"]:hover {
+    background: #c0392b;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #e5e5ec !important;
+}
+
+th {
+    background: #4834d4;
+    color: #fff;
+    text-align: left;
+    padding: 12px 14px;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px 14px;
+    color: #444;
+}
+
+tr:nth-child(even) {
+    background: #f7f7fb;
+}
+
+tr:hover {
+    background: #efedff;
+}
+
+td a {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+td a:last-child {
+    color: #e74c3c;
+}
+
+td a:last-child:hover {
+    color: #c0392b;
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+@media (max-width: 600px) {
+    .box, .portal-container {
+        padding: 25px 20px;
+    }
+
+    .portal-actions {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
