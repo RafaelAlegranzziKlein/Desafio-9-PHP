@@ -27,8 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <head>
+    <meta charset="UTF-8">
     <title>A U T E N T I C A Ç Ã O</title>
-  
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 
@@ -62,3 +63,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 </html>
+ 

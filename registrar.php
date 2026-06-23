@@ -20,31 +20,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Adicionar Usuário</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1>Adicionar Usuário</h1>
-    <form method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" required>
-        <br><br>
-        <label>Sexo:</label>
-        <label for="masculino">
-            <input type="radio" id="masculino" name="sexo" value="M" required> Masculino
-        </label>
-        <label for="feminino">
-            <input type="radio" id="feminino" name="sexo" value="F" required> Feminino
-        </label>
-        <br><br>
-        <label for="fone">Fone:</label>
-        <input type="text" name="fone" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
-        <br><br>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" required>
-        <br><br>
-        <input type="submit" value="Adicionar">
-    </form>
+    <div class="container">
+        <div class="box">
+            <h1>Adicionar Usuário</h1>
+            <form method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+
+                <label>Sexo:</label>
+                <label for="masculino">
+                    <input type="radio" id="masculino" name="sexo" value="M" required> Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" id="feminino" name="sexo" value="F" required> Feminino
+                </label>
+
+                <label for="fone">Fone:</label>
+                <input type="text" name="fone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" required>
+
+                <input type="submit" value="Adicionar">
+            </form>
+            <p><a href="portal.php">Voltar ao portal</a></p>
+        </div>
+    </div>
 </body>
 </html>

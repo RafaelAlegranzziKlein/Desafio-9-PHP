@@ -41,33 +41,38 @@ function saudacao() {
 <head>
     <meta charset="UTF-8">
     <title>Portal</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1><?php echo saudacao() . ", " . $nome_usuario; ?>!</h1>
-    <a href="registrar.php">Adicionar Usuário</a>
-    <a href="logout.php">Logout</a>
-<br>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Fone</th>
-            <th>Email</th>
-            <th>Ações</th>
-        </tr>
-        <?php while ($row = $dados->fetch(PDO::FETCH_ASSOC)) : ?>
+    <div class="portal-container">
+        <h1><?php echo saudacao() . ", " . $nome_usuario; ?>!</h1>
+        <div class="portal-actions">
+            <a href="registrar.php">Adicionar Usuário</a>
+            <a href="logout.php">Logout</a>
+        </div>
+        <table>
             <tr>
-                <td><?php echo $row['id']; ?></td>
-                <td><?php echo $row['nome']; ?></td>
-                <td><?php echo ($row['sexo'] === 'M') ? 'Masculino' : 'Feminino'; ?></td>
-                <td><?php echo $row['fone']; ?></td>
-                <td><?php echo $row['email']; ?></td>
-                <td>
-                    <a href="editar.php?id=<?php echo $row['id']; ?>">Editar</a>
-                    <a href="deletar.php?id=<?php echo $row['id']; ?>">Deletar</a>
-                </td>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Fone</th>
+                <th>Email</th>
+                <th>Ações</th>
             </tr>
-        <?php endwhile; ?>
-    </table>
+            <?php while ($row = $dados->fetch(PDO::FETCH_ASSOC)) : ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['nome']; ?></td>
+                    <td><?php echo ($row['sexo'] === 'M') ? 'Masculino' : 'Feminino'; ?></td>
+                    <td><?php echo $row['fone']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td>
+                        <a href="editar.php?id=<?php echo $row['id']; ?>">Editar</a>
+                        <a href="deletar.php?id=<?php echo $row['id']; ?>">Deletar</a>
+                    </td>
+                </tr>
+            <?php endwhile; ?>
+        </table>
+    </div>
 </body> </html>
+ 
