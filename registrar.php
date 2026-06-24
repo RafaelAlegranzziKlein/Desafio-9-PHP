@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <input type="submit" value="Adicionar">
             </form>
-            <p><a href="portal.php">Voltar ao portal</a></p>
+            <p><a href="index.php">Voltar ao Login</a></p>
         </div>
     </div>
 </body>
