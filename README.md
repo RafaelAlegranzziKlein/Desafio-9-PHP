@@ -93,7 +93,7 @@ Tela de Login
 <img width="778" height="609" alt="image" src="https://github.com/user-attachments/assets/3c51c543-2610-4619-b1da-7a4f1b143158" />
 
 Tela de Cadastro
-<img width="494" height="631" alt="image" src="https://github.com/user-attachments/assets/9885f840-1b4c-4f91-88d3-0e985040b4f8" />
+<img width="893" height="606" alt="image" src="https://github.com/user-attachments/assets/8bd674f0-cbbf-4e11-8003-f79959a0d38d" />
 
 Tela do Portal
 <img width="1002" height="511" alt="image" src="https://github.com/user-attachments/assets/aacfbfb5-2532-4d40-88ea-db3cc00014c1" />
