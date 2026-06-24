@@ -89,11 +89,11 @@ A tabela `usuarios` possui os seguintes campos:
 
 ## 🖼️ Imagens do  site
 
- -Tela de Login
-  -<img width="799" height="582" alt="image" src="https://github.com/user-attachments/assets/6084fcad-25e8-4428-8cfc-7552b85ab713" />
+ - Tela de Login
+  - <img width="799" height="582" alt="image" src="https://github.com/user-attachments/assets/6084fcad-25e8-4428-8cfc-7552b85ab713" />
 
- -Tela de Cadastro
-  -<img width="893" height="606" alt="image" src="https://github.com/user-attachments/assets/8bd674f0-cbbf-4e11-8003-f79959a0d38d" />
+ - Tela de Cadastro
+  - <img width="893" height="606" alt="image" src="https://github.com/user-attachments/assets/8bd674f0-cbbf-4e11-8003-f79959a0d38d" />
 
- -Tela do Portal
-  -<img width="1002" height="511" alt="image" src="https://github.com/user-attachments/assets/aacfbfb5-2532-4d40-88ea-db3cc00014c1" />
+ - Tela do Portal
+  - <img width="1002" height="511" alt="image" src="https://github.com/user-attachments/assets/aacfbfb5-2532-4d40-88ea-db3cc00014c1" />
